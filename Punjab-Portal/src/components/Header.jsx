@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { FaBars, FaTimes, FaSearch, FaUser } from 'react-icons/fa';
+import logo from '../assets/cropped-kpk-logo.png'; // Ensure the path is correct
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,7 +19,8 @@ export default function Header() {
       <div className="flex justify-between items-center p-4">
         <div className="flex items-center">
           <div className="bg-white flex items-center justify-center rounded-xl w-16 h-16">
-            <span className="font-bold text-green-900">KPK</span>
+            {/* <span className="font-bold text-green-900">KPK</span> */}
+            <img src={logo} alt="KPK" />
           </div>
           <div className="ml-4">
             <h1 className="text-xl font-bold">Government of Khyber Pakhtunkhwa</h1>
